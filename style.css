@@ -5,6 +5,7 @@ div.dokuwiki a.unblink_plugin:visited {
     position: relative;
     background: transparent url(user.png) no-repeat left top;
     padding-left: 18px;
+    z-index: 10;
 }
 
 div.dokuwiki a.unblink_plugin:link span.unblink_popup,
@@ -15,6 +16,7 @@ div.dokuwiki a.unblink_plugin:visited span.unblink_popup {
 
 div.dokuwiki a.unblink_plugin:hover {
     text-decoration: none !important;
+    z-index: 15;
 }
 
 div.dokuwiki a.unblink_plugin:hover span.unblink_popup {
