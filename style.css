@@ -1,0 +1,33 @@
+div.dokuwiki a.unblink_plugin:link,
+div.dokuwiki a.unblink_plugin:active,
+div.dokuwiki a.unblink_plugin:hover,
+div.dokuwiki a.unblink_plugin:visited {
+    position: relative;
+    background: transparent url(user.png) no-repeat left top;
+    padding-left: 18px;
+}
+
+div.dokuwiki a.unblink_plugin:link span.unblink_popup,
+div.dokuwiki a.unblink_plugin:active span.unblink_popup,
+div.dokuwiki a.unblink_plugin:visited span.unblink_popup {
+    display: none;
+}
+
+div.dokuwiki a.unblink_plugin:hover {
+    text-decoration: none !important;
+}
+
+div.dokuwiki a.unblink_plugin:hover span.unblink_popup {
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    left: 18px;
+    width: 20em;
+    height: 64px;
+    min-height: 64px;
+    height: auto;
+    background-color: __background__;
+    border: 1px solid __border__;
+    padding: 0.5em;
+    font-size: 90%;
+}
