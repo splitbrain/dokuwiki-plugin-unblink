@@ -6,6 +6,8 @@
  */
 
 
-$meta['profileurl'] = array('string');
-$meta['avatarurl']  = array('string');
-$meta['gravatar'] = array('string');
+$meta['profileurl']  = array('string');
+$meta['avatarurl']   = array('string');
+$meta['gravatar']    = array('string');
+$meta['usefullname'] = array('onoff');
+

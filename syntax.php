@@ -61,7 +61,13 @@ class syntax_plugin_unblink extends DokuWiki_Syntax_Plugin {
             return true;
         }
 
-        if(!$title) $title = $uinfo['name'];
+        if(!$title){
+            if($this->getConf('usefullname')){
+                $title = $uinfo['name'];
+            }else{
+                $title = $login;
+            }
+        }
         if(!$title) $title = $login;
 
         if($uinfo['avatar'] && $uinfo['avatar'] != 'gravatar'){
