@@ -1,7 +1,7 @@
 base   unblink
 author Andreas Gohr
 email  andi@splitbrain.org
-date   2015-08-11
+date   2016-02-03
 name   unblink plugin
 desc   link to UNB profile pages
 url    http://www.dokuwiki.org/plugin:unblink
