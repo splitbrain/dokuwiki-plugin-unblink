@@ -33,7 +33,7 @@ class syntax_plugin_unblink extends DokuWiki_Syntax_Plugin {
         $this->Lexer->addSpecialPattern('\[\[user>.+?\]\]',$mode,'plugin_unblink');
     }
 
-    function handle($match, $state, $pos, &$handler){
+    function handle($match, $state, $pos, Doku_Handler $handler){
         $match = trim(substr($match,7,-2));
 
 
@@ -42,7 +42,7 @@ class syntax_plugin_unblink extends DokuWiki_Syntax_Plugin {
         return compact('login','title');
     }
 
-    function render($mode, &$R, $data) {
+    function render($mode, Doku_Renderer $R, $data) {
         global $auth;
         global $conf;
         extract($data);
